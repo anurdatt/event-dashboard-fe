@@ -1,0 +1,31 @@
+<div class="card mt-4">
+    <!-- <h4 class="card-header">You're logged in with Angular 10 & JWT!!</h4> -->
+    <h4 class="card-header">You're logged in with {{routeData?.role || 'NO'}} access!!</h4>
+    <div class="card-body">
+        <h6>Users from secure api end point</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="users">
+            <li *ngFor="let user of users">{{user?.firstName}} {{user?.lastName}}</li>
+        </ul>
+    </div>
+</div>
+<!-- <div class="p-5 rounded bg-warning">
+    <h1 class="text-center">Welcome to angular 10 and bootstrap 5.1</h1>
+</div>
+<div class="row g-0 position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="..." class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Columns with stretched link</h5>
+      <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+      <a href="#" class="stretched-link">Go somewhere</a>
+    </div>
+</div>
+
+<div class="alert bg-success" role="alert">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div> -->
